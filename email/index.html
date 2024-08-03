@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Sending</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="contact-us">
+        <div class="input-container" data-aos="fade-up">
+            <header class="Header">Contact Us</header>
+            <form id="contactForm" onsubmit="SendMail(event)">
+                <div class="mb-3">
+                    <label for="Email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="Email" aria-describedby="emailHelp" required>
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="Area" class="form-label">Message</label>
+                    <textarea class="form-control" id="Area" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="hireme-btn">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
